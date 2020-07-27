@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/xml-screen-2.1.xsd"
+        require-authentication="anonymous-all" standalone="true" allow-extra-path="true" default-menu-include="false" default-menu-title="React Moqui Component" menu-image="glyphicon glyphicon-system" menu-image-type="icon">
+    <widgets>
+        <render-mode>
+            <text type="html,vuet" location="component://react-moqui-component/screen/reactMoquiComponent/index.html" />
+        </render-mode>
+    </widgets>
+</screen>

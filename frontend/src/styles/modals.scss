@@ -1,0 +1,22 @@
+.ReactModal__Content {
+  @import '~bootstrap/dist/css/bootstrap';
+  @import './common.scss';
+  
+  font-family: "Noto Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-size: 12px;
+  max-height: 90vh;
+  max-width: 800px;
+  width: 90%;
+  top: 50% !important;
+  left: 50% !important;
+  height: fit-content;
+  transform: translate(-50%, -50%) !important;
+}
+
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+  z-index: 1000;
+}

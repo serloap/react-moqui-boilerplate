@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<moqui-conf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/moqui-conf-2.1.xsd">
+    <screen-facade>
+        <screen location="component://webroot/screen/webroot.xml">
+            <subscreens-item name="reactMoquiComponent" menu-include="false" location="component://react-moqui-component/screen/reactMoquiComponent.xml"/>
+        </screen>
+        <screen location="component://webroot/screen/webroot/apps.xml">
+            <subscreens-item name="reactMoquiComponent" menu-title="React Moqui Component" menu-index="16" location="component://react-moqui-component/screen/reactMoquiComponent.xml"/>
+        </screen>
+    </screen-facade>
+</moqui-conf>

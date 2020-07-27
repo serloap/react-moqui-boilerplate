@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  background-color: #f8f8f8;
+}
+
+.main-container {
+  @import '~bootstrap/dist/css/bootstrap';
+  @import './common.scss';
+
+  font-family: "Noto Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  font-size: 12px;
+  background-color: #f8f8f8;
+
+  *:focus {
+    outline: none;
+  }
+}
+
+@import './modals.scss';
