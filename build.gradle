@@ -51,21 +51,14 @@ task npmRunBuild(type: NpmTask) {
 
     def srcDir = [fileTree(frontendDir + "/src"), fileTree(frontendDir + "/node_modules").exclude(".cache")]
     inputs.files(srcDir)
-    def distDir = frontendDir + "/build"
+    def distDir = projectDir.absolutePath + "/screen/reactMoquiComponent"
     outputs.dir distDir
     workingDir = file(frontendDir)
     args = ['run', 'build']
 }
 
 build {
-    // dependsOn npmRunBuild
-    // doLast {
-    //     copy {
-    //         from frontendDir + '/build'
-    //         into './screen/reactMoquiComponent'
-    //         include '**'
-    //     }
-    // }
+    dependsOn npmRunBuild
 }
 
 task cleanLib(type: Delete) {
